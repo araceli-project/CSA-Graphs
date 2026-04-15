@@ -1,6 +1,6 @@
 # CSA-Graphs: A Privacy-Preserving Structural Dataset for Child Sexual Abuse Research
 
-This repository provides code for modeling privacy-preserving structural representations (scene graphs and human pose graphs) for CSAI classification.
+This repository provides code for modeling privacy-preserving structural representations (scene graphs and human skeleton poses) for CSAI classification.
 
 ---
 
