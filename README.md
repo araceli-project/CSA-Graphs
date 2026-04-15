@@ -65,38 +65,6 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
-
-### 1. Skeleton (Pose Graph) Branch
-
-Runs the GAT-based model on pose graphs with **N repeated runs** and reports aggregated results:
-
-```bash
-python src/gat_pose.py
-```
-
----
-
-### 2. Scene Graph Branch
-
-Runs the GAT-based model on scene graphs with **N repeated runs** and aggregated metrics:
-
-```bash
-python src/gat_sg.py
-```
-
----
-
-### 3. Ensemble (Fusion with XGBoost)
-
-Combines both modalities (pose + scene graphs) using an **XGBoost classifier**:
-
-```bash
-python src/gat_emsemble_xgboost.py
-```
-
----
-
 ## Model Overview
 
 We provide a Graph Neural Network baseline based on **GATv2**:
@@ -106,6 +74,37 @@ We provide a Graph Neural Network baseline based on **GATv2**:
 - **Fusion**: combines both modalities using XGBoost for improved classification performance  
 
 Each experiment is executed with **multiple runs (N)** to ensure robustness, reporting aggregated statistics.
+
+
+### Usage
+
+#### 1. Skeleton (Pose Graph) Branch
+
+Runs the GAT-based model on pose graphs with **N repeated runs** and reports aggregated results:
+
+```bash
+python src/gat_pose.py
+```
+
+---
+
+#### 2. Scene Graph Branch
+
+Runs the GAT-based model on scene graphs with **N repeated runs** and aggregated metrics:
+
+```bash
+python src/gat_sg.py
+```
+
+---
+
+#### 3. Ensemble (Fusion with XGBoost)
+
+Combines both modalities (pose + scene graphs) using an **XGBoost classifier**:
+
+```bash
+python src/gat_emsemble_xgboost.py
+```
 
 ---
 
